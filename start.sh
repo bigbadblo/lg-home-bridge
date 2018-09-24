@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /app/slack-bot  && git stash && git pull && bundle
+
 node index.js alexa &
 
 cd /app/slack-bot && bundle exec rackup config.ru &>  /app/slack-bot/log.txt &
