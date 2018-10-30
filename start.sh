@@ -2,8 +2,7 @@
 
 cd /app/slack-bot  && git stash && git pull && bundle
 
-yarn install 
-
+npm install
 node index.js alexa &
 
 cd /app/slack-bot && bundle exec rackup config.ru &>  /app/slack-bot/log.txt &
